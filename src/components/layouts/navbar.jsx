@@ -32,13 +32,19 @@ function SharedLayout() {
             className="flex items-center gap-2 text-lg font-semibold md:text-base"
           >
             <Package2 className="h-6 w-6" />
-            <span className="sr-only">Acme Inc</span>
+            <span className="sr-only">MyApp</span>
           </a>
           <a
             href="#"
             className="text-muted-foreground transition-colors hover:text-foreground"
           >
             Home
+          </a>
+          <a
+            href="#"
+            className="text-muted-foreground transition-colors hover:text-foreground"
+          >
+            Placeholder
           </a>
         </nav>
         <Sheet>
@@ -59,13 +65,19 @@ function SharedLayout() {
                 className="flex items-center gap-2 text-lg font-semibold"
               >
                 <Package2 className="h-6 w-6" />
-                <span className="sr-only">Acme Inc</span>
+                <span className="sr-only">MyApp</span>
               </a>
               <a
                 href="#"
                 className="text-muted-foreground hover:text-foreground"
               >
                 Home
+              </a>
+              <a
+                href="#"
+                className="text-muted-foreground hover:text-foreground"
+              >
+                Placeholder
               </a>
             </nav>
           </SheetContent>
@@ -89,9 +101,12 @@ function SharedLayout() {
           </DropdownMenu>
         </div>
       </header>
-      <main className="flex flex-1">
+      <main className="flex flex-1 justify-center items-center">
         <Outlet />
       </main>
+      <footer className="flex justify-center items-center h-16 border-t bg-background">
+        <p className="text-muted-foreground">Footer Placeholder</p>
+      </footer>
     </div>
   )
 }

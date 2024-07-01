@@ -1,38 +1,65 @@
-# canvas-core
+# MyApp
 
-Create a bare-bones application that I can modify and build on.
+This is a minimal web application built with React, Shadcn-UI, and Tailwind CSS. It serves as a starting point for building more complex applications.
 
-## Collaborate with GPT Engineer
+## Features
 
-This is a [gptengineer.app](https://gptengineer.app)-synced repository 🌟🤖
+- Home Page with a welcome message and brief description.
+- Navigation Bar with links to the Home page and a placeholder for future pages.
+- Footer with placeholder text.
+- Basic styling using Tailwind CSS.
+- Responsive layout.
 
-Changes made via gptengineer.app will be committed to this repo.
+## File Structure
 
-If you clone this repo and push changes, you will have them reflected in the GPT Engineer UI.
+- `src/`
+  - `components/`
+    - `layouts/`
+      - `navbar.jsx` - Navigation bar layout.
+  - `pages/`
+    - `Index.jsx` - Home page.
+  - `App.jsx` - Main application component.
+  - `index.css` - Tailwind CSS styles.
+  - `main.jsx` - Entry point for the React application.
 
-## Tech stack
+## Getting Started
 
-This project is built with React with shadcn-ui and Tailwind CSS.
+1. **Clone the repository:**
 
-- Vite
-- React
-- shadcn-ui
-- Tailwind CSS
+   ```bash
+   git clone <repository-url>
+   cd <repository-directory>
+   ```
 
-## Setup
+2. **Install dependencies:**
 
-```sh
-git clone https://github.com/GPT-Engineer-App-Dev/canvas-core.git
-cd canvas-core
-npm i
-```
+   ```bash
+   npm install
+   ```
 
-```sh
-npm run dev
-```
+3. **Run the application:**
 
-This will run a dev server with auto reloading and an instant preview.
+   ```bash
+   npm run dev
+   ```
 
-## Requirements
+4. **Open your browser:**
 
-- Node.js & npm - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+   Navigate to `http://localhost:5173` to see the application in action.
+
+## Modifying the Application
+
+- **Adding new pages:**
+  - Create a new file in the `src/pages/` directory.
+  - Add a new route in `src/App.jsx`.
+
+- **Updating the navigation bar:**
+  - Modify the `src/components/layouts/navbar.jsx` file to add or remove links.
+
+- **Styling:**
+  - Use Tailwind CSS classes to style your components.
+  - Modify the `src/index.css` file to add global styles.
+
+## License
+
+This project is licensed under the MIT License.
